@@ -57,7 +57,7 @@ public class AdminController {
 	
 	/**
 	 * 
-	 * @Description: loing page
+	 * @Description: login page
 	 * @return
 	 */
 	@RequestMapping("/login")
