@@ -17,4 +17,40 @@ public interface CategoryService {
 	
 	List<Category> listCategory();
 
+	/**
+	 * @Description: get category list
+	 * @return    
+	 */
+	
+	List<Category> listCategoryWithCount();
+
+	/**
+	 * @Description: add category
+	 * @param category    
+	 */
+	
+	void insertCategory(Category category);
+
+	/**
+	 * @Description: delete category
+	 * @param id    
+	 */
+	
+	void deleteCategory(Integer id);
+
+	/**
+	 * @Description: get category list
+	 * @param id
+	 * @return    
+	 */
+	
+	Category getCategoryById(Integer id);
+
+	/**
+	 * @Description: update category
+	 * @param category    
+	 */
+	
+	void updateCategory(Category category);
+
 }

@@ -116,4 +116,12 @@ public interface ArticleService {
 	
 	void deleteArticle(Integer id);
 
+	/**
+	 * @Description: accounting article on this category
+	 * @param   id
+	 * @return    
+	 */
+	
+	Integer countArticleByCategoryId(Integer id);
+
 }
