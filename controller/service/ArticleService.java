@@ -1,7 +1,9 @@
 package com.jimmyblog.controller.service;
 
+import java.util.HashMap;
 import java.util.List;
 
+import com.github.pagehelper.PageInfo;
 import com.jimmyblog.entity.Article;
 
 /**
@@ -89,5 +91,29 @@ public interface ArticleService {
 	 */
 	
 	List<Article> listRencentArticle(int limit);
+
+	/**
+	 * @Description:  paging
+	 * @param pageIndex
+	 * @param pageSize
+	 * @param crieria <query condition>
+	 * @return    
+	 */
+	
+	PageInfo<Article> pageArticle(Integer pageIndex, Integer pageSize, HashMap<String, Object> crieria);
+
+	/**
+	 * @Description: add article
+	 * @param article    
+	 */
+	
+	void insertArticle(Article article);
+
+	/**
+	 * @Description: delete article
+	 * @param id    
+	 */
+	
+	void deleteArticle(Integer id);
 
 }

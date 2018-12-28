@@ -20,4 +20,6 @@ public class User implements Serializable {
 	private String userLastLoginIp;
 	
     private Date userLastLoginTime;
+
+	public Integer userId;
 }

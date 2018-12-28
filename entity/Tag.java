@@ -10,7 +10,13 @@ import lombok.Data;
  */
 @Data
 public class Tag implements Serializable {
-    private static final long serialVersionUID = 605449151900057035L;
+	private static final long serialVersionUID = 605449151900057035L;
     private Integer tagId;
+    
+	public Tag(Integer tagId) {
+		super();
+		this.tagId = tagId;
+	}
 		
+
 }

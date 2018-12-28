@@ -1,6 +1,7 @@
 package com.jimmyblog.entity;
 import lombok.Data;
 import java.io.Serializable;
+import java.util.List;
 
 
 
@@ -19,10 +20,18 @@ public class Article implements Serializable{
 
 	private Integer articleLikeCount;
 
-	
-	public Integer articleViewCount;
-	
+	private Integer articleViewCount;
 
- 
+	private Integer articleUserId;
+
+	private String articleTitle;
+	
+	private String articleContent;
+	
+	private String articleStatus;
+	
+	private List<Category> categoryList;
+	
+	private List<Tag> tagList;
 	
 }
