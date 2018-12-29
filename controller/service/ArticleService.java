@@ -124,4 +124,11 @@ public interface ArticleService {
 	
 	Integer countArticleByCategoryId(Integer id);
 
+	/**
+	 * @Description: update article comment
+	 * @param articleId    
+	 */
+	
+	void updateCommentCount(Integer articleId);
+
 }

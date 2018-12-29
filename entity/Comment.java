@@ -1,6 +1,7 @@
 package com.jimmyblog.entity;
 
 import java.io.Serializable;
+import java.util.Date;
 
 import lombok.Data;
 
@@ -13,4 +14,11 @@ public class Comment implements Serializable {
 	
 	private static final long serialVersionUID = -1038897351672911219L;
 	private Integer commentId;
+
+	
+	private String commentIp;
+	
+	private Date commentCreateTime;
+
+	private Integer commentArticleId;
 }

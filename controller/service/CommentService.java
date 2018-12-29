@@ -2,6 +2,7 @@ package com.jimmyblog.controller.service;
 
 import java.util.List;
 
+import com.github.pagehelper.PageInfo;
 import com.jimmyblog.entity.Comment;
 
 
@@ -26,6 +27,52 @@ public interface CommentService {
 	 */
 	
 	List<Comment> listRencentComment(int limit);
+
+	/**
+	 * @Description: comment page
+	 * @param pageIndex
+	 * @param pageSize
+	 * @return    
+	 */
+	
+	PageInfo<Comment> listCommentByPage(Integer pageIndex, Integer pageSize);
+
+	/**
+	 * @Description: add comment
+	 * @param comment    
+	 */
+	
+	void insertComment(Comment comment);
+
+	/**
+	 * @Description: get comment from id
+	 * @param id
+	 * @return    
+	 */
+	
+	Comment getCommentById(Integer id);
+
+	/**
+	 * @Description: delete comment from id
+	 * @param id    
+	 */
+	
+	void deleteComment(Integer id);
+
+	/**
+	 * @Description: get child comment from  parent comment
+	 * @param id
+	 * @return    
+	 */
+	
+	List<Comment> listChildComment(Integer id);
+
+	/**
+	 * @Description: edit comment
+	 * @param comment    
+	 */
+	
+	void updateComment(Comment comment);
 	
 	
 

@@ -33,5 +33,7 @@ public class Article implements Serializable{
 	private List<Category> categoryList;
 	
 	private List<Tag> tagList;
+
+	private Integer articleCommentCount;
 	
 }
