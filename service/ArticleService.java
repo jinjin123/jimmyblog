@@ -1,4 +1,4 @@
-package com.jimmyblog.controller.service;
+package com.jimmyblog.service;
 
 import java.util.HashMap;
 import java.util.List;

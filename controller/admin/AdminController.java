@@ -17,9 +17,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.jimmyblog.controller.service.ArticleService;
-import com.jimmyblog.controller.service.CommentService;
-import com.jimmyblog.controller.service.UserSerivce;
+import com.jimmyblog.service.ArticleService;
+import com.jimmyblog.service.CommentService;
+import com.jimmyblog.service.UserSerivce;
 import com.jimmyblog.entity.*;
 
 import org.springframework.ui.Model;

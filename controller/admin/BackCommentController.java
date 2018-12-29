@@ -15,8 +15,8 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.ui.Model;
 
 import com.github.pagehelper.PageInfo;
-import com.jimmyblog.controller.service.ArticleService;
-import com.jimmyblog.controller.service.CommentService;
+import com.jimmyblog.service.ArticleService;
+import com.jimmyblog.service.CommentService;
 import com.jimmyblog.entity.Article;
 import com.jimmyblog.entity.Comment;
 import com.jimmyblog.enums.ArticleStatus;
@@ -142,5 +142,6 @@ public class BackCommentController {
 		comment.setCommentIp(Functions.getIpAddr(request));
 		return "redirect:/admin/comment";
 	}
+	
 }
 

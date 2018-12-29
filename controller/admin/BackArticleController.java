@@ -15,9 +15,9 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.github.pagehelper.PageInfo;
-import com.jimmyblog.controller.service.ArticleService;
-import com.jimmyblog.controller.service.CategoryService;
-import com.jimmyblog.controller.service.TagService;
+import com.jimmyblog.service.ArticleService;
+import com.jimmyblog.service.CategoryService;
+import com.jimmyblog.service.TagService;
 import com.jimmyblog.dto.ArticleParam;
 import com.jimmyblog.entity.*;
 
