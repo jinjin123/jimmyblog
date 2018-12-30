@@ -2,17 +2,19 @@ package com.jimmyblog.controller.home;
 
 import java.util.List;
 
-import org.springframework.beans.factory.Aware;
+import com.jimmyblog.service.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.alibaba.fastjson.JSON;
-import com.jimmyblog.controller.service.*;
 import com.jimmyblog.entity.*;
 import com.jimmyblog.enums.ArticleStatus;
 
-import org.springframework.ui.Model;
 
 /**
  * Created  by  Jimmy  on 2018/12/27
@@ -33,8 +35,6 @@ public class ArticleController {
 	@Autowired
 	private TagService tagService;
 	
-	@Autowired
-	private CategoryService categoryService;
 	/**
 	 * 
 	 * @Description: article  page 
