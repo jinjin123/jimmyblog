@@ -100,7 +100,7 @@ public interface ArticleService {
 	 * @return    
 	 */
 	
-	PageInfo<Article> pageArticle(Integer pageIndex, Integer pageSize, HashMap<String, Object> crieria);
+	PageInfo<Article> pageArticle(Integer pageIndex, Integer pageSize, HashMap<String, Object> criteria);
 
 	/**
 	 * @Description: add article
@@ -138,5 +138,20 @@ public interface ArticleService {
 	 */
 	
 	Integer countArticleByTagId(Integer id);
+
+	/**
+	 * @Description: get article by more comment
+	 * @param i
+	 * @return    
+	 */
+	
+	List<Article> listArticleByCommentCount(int i);
+
+	/**
+	 * @Description: get all article
+	 * @return    
+	 */
+	
+	List<Article> listAllNotWithContent();
 
 }

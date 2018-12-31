@@ -19,6 +19,15 @@ public class Comment implements Serializable {
 	private String commentIp;
 	
 	private Date commentCreateTime;
+	
+	private String commentAuthorEmail;
+	
+	private String commentAuthorAvatar;
 
 	private Integer commentArticleId;
+	
+	/**
+	 * role(admin1,visitor0)
+	 */
+	private Integer commentRole;
 }

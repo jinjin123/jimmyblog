@@ -86,7 +86,7 @@ public class ArticleController {
 		model.addAttribute("randomArticleList", randomArticleList);
 		
 		//get hot article
-		List<Article> mostCommentArticle = articleService.listArticleByCommentArticle(8);
+		List<Article> mostCommentArticle = articleService.listArticleByCommentCount(8);
 		model.addAttribute("mostCommentArticle", mostCommentArticle);
 		
 		return "HOME/Page/articleDetail";
