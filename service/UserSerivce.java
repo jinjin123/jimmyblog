@@ -1,5 +1,7 @@
 package com.jimmyblog.service;
 
+import java.util.List;
+
 import com.jimmyblog.entity.User;
 
 /**
@@ -30,5 +32,42 @@ public interface UserSerivce {
 	 */
 	
 	void updateUser(User user);
+
+	/**
+	 * @Description: get user list
+	 * @return    
+	 */
+	
+	List<User> listUser();
+
+	/**
+	 * @Description: get user from user
+	 * @param username
+	 * @return    
+	 */
+	
+	User getUserByName(String username);
+
+	/**
+	 * @Description: check user from email
+	 * @param email
+	 * @return    
+	 */
+	
+	User getUserByEmail(String email);
+
+	/**
+	 * @Description: add user
+	 * @param user    
+	 */
+	
+	void insertUser(User user);
+
+	/**
+	 * @Description: delete user
+	 * @param id    
+	 */
+	
+	void deleteUser(Integer id);
 
 }

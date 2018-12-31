@@ -14,12 +14,17 @@ public class User implements Serializable {
 	
 	private static final long serialVersionUID = -4415517704211731385L;
 
-	
+	private String userName;
+	private String userEmail;
 	private String UserPass;
 
 	private String userLastLoginIp;
 	
     private Date userLastLoginTime;
+    
+    private Date userRegisterTime;
 
 	public Integer userId;
+	
+	public Integer userStatus;
 }

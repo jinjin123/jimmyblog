@@ -131,4 +131,12 @@ public interface ArticleService {
 	
 	void updateCommentCount(Integer articleId);
 
+	/**
+	 * @Description: get article tag from id 
+	 * @param id
+	 * @return    
+	 */
+	
+	Integer countArticleByTagId(Integer id);
+
 }
