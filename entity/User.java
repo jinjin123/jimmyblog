@@ -27,4 +27,7 @@ public class User implements Serializable {
 	public Integer userId;
 	
 	public Integer userStatus;
+	
+	//not db columns
+    private Integer articleCount;
 }

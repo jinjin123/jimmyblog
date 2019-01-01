@@ -47,4 +47,12 @@ public interface LinkService {
 	
 	void updateLink(Link link);
 
+	/**
+	 * @Description: get link
+	 * @param status
+	 * @return    
+	 */
+	
+	Integer countLink(Integer status);
+
 }

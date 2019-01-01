@@ -25,8 +25,8 @@ public interface CommentService {
 	 * @param limit 
 	 * @return    
 	 */
-	
-	List<Comment> listRencentComment(int limit);
+
+	List<Comment> listRecentComment(Integer limit);
 
 	/**
 	 * @Description: comment page
@@ -74,6 +74,19 @@ public interface CommentService {
 	
 	void updateComment(Comment comment);
 	
+	/**
+	 * 
+	 * @Description: get comment list
+	 * @return
+	 */
+    List<Comment> listComment();
 	
+    /**
+     * 
+     * @Description: compute comment 
+     * @return
+     */
+    Integer countComment();
+
 
 }

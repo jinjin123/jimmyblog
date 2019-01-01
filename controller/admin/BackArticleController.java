@@ -176,7 +176,7 @@ public class BackArticleController {
             }
         }
         article.setTagList(tagList);
-        articleService.updateArticle(article);
+        articleService.updateArticleDetail(article);
  		return "redirect:/admin/article";
 	}
 }

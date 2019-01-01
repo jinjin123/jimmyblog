@@ -59,9 +59,10 @@ public interface UserSerivce {
 	/**
 	 * @Description: add user
 	 * @param user    
+	 * @return 
 	 */
 	
-	void insertUser(User user);
+	User insertUser(User user);
 
 	/**
 	 * @Description: delete user

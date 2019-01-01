@@ -18,19 +18,14 @@ public interface TagService {
 	
 	List<Tag> listTag();
 
-	/**
-	 * @Description:get tag 
-	 * @return    
-	 */
-	
-	List<Tag> listTagwithCount();
 
 	/**
 	 * @Description: add tag
 	 * @param tag    
+	 * @return 
 	 */
 	
-	void insertTag(Tag tag);
+	Tag insertTag(Tag tag);
 
 	/**
 	 * @Description: delte tag from this id
@@ -60,5 +55,12 @@ public interface TagService {
 	 */
 	
 	void updateTag(Tag tag);
+
+	/**
+	 * @Description: get tag count
+	 * @return    
+	 */
+	
+	Integer countTag();
 
 }

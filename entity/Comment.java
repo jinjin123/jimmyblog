@@ -30,4 +30,8 @@ public class Comment implements Serializable {
 	 * role(admin1,visitor0)
 	 */
 	private Integer commentRole;
+	/**
+	 *  not db columns
+	 */
+    private Article article;
 }

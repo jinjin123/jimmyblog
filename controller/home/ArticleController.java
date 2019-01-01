@@ -61,7 +61,7 @@ public class ArticleController {
 		model.addAttribute("commentList", commentList);
 		
 		//other article
-		List<Integer> categoryIds = articleService.listCategoryByArticleId(articleId);
+		List<Integer> categoryIds = articleService.listCategoryIdByArticleId(articleId);
 		List<Article> similarArticleList = articleService.listArticleByCategoryIds(categoryIds,5);
 		model.addAttribute("similarArticleList", similarArticleList);
 		

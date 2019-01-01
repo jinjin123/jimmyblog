@@ -1,6 +1,7 @@
 package com.jimmyblog.entity;
 import lombok.Data;
 import java.io.Serializable;
+import java.util.Date;
 import java.util.List;
 
 
@@ -35,5 +36,13 @@ public class Article implements Serializable{
 	private List<Tag> tagList;
 
 	private Integer articleCommentCount;
+	
+	private Date articleUpdateTime;
+	 
+	private Date articleCreateTime;
+	
+    private Integer articleIsComment;
+    
+    private Integer articleOrder;
 	
 }

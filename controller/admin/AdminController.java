@@ -47,10 +47,10 @@ public class AdminController {
 	@RequestMapping("/admin")
 	public String index(Model model) {
 		//ariticle list 
-		List<Article> articleList  = articleService.listRencentArticle(5);
+		List<Article> articleList  = articleService.listRecentArticle(5);
 		model.addAttribute("articleList", articleList);
 		//comment list
-		List<Comment> commenetsList = commentService.listRencentComment(5);
+		List<Comment> commenetsList = commentService.listRecentComment(5);
 		model.addAttribute("commenetsList", commenetsList);
 		return "Admin/index";
 	}

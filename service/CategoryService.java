@@ -29,7 +29,7 @@ public interface CategoryService {
 	 * @param category    
 	 */
 	
-	void insertCategory(Category category);
+    Category insertCategory(Category category);
 
 	/**
 	 * @Description: delete category
@@ -52,5 +52,20 @@ public interface CategoryService {
 	 */
 	
 	void updateCategory(Category category);
+
+	/**
+	 * @Description: get category count
+	 * @return    
+	 */
+	
+	Integer countCategory();
+	
+	/**
+	 * 
+	 * @Description: get category by category name
+	 * @param name
+	 * @return
+	 */
+	Category getCategoryByName(String name);
 
 }

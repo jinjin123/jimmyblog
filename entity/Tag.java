@@ -17,6 +17,9 @@ public class Tag implements Serializable {
 		super();
 		this.tagId = tagId;
 	}
+	
+	//not db columns
+    private Integer articleCount;
 		
 
 }

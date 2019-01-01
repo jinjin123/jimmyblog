@@ -20,9 +20,10 @@ public interface MenuService {
 	/**
 	 * @Description: add menu
 	 * @param menu    
+	 * @return 
 	 */
 	
-	void insertMenu(Menu menu);
+	Menu insertMenu(Menu menu);
 
 	/**
 	 * @Description: delete id

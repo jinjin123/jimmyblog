@@ -62,7 +62,7 @@ public class IndexController {
 		List<Tag> tagList = tagService.listTag();
 		model.addAttribute("tagList",tagList);
 		//new comment
-		List<Comment> recentCommentList = commentService.listRencentComment(10);
+		List<Comment> recentCommentList = commentService.listRecentComment(10);
 		model.addAttribute("recentCommentList",recentCommentList);
 		model.addAttribute("pageUrlPrefix","/article?pageIndex");
 		return "Home/index";
@@ -88,7 +88,7 @@ public class IndexController {
 		List<Article> mostCommentArticleList = articleService.listArticleByCommentCount(8); 
 		model.addAttribute("mostCommentArticleList",mostCommentArticleList);
 		// recent comment
-		List<Comment> recentCommentList = commentService.listRencentComment(8);
+		List<Comment> recentCommentList = commentService.listRecentComment(8);
 		model.addAttribute("recentCommentList",recentCommentList);
 		model.addAttribute("pageUrlPrefix","/search?pageIndex");
 		return "Home/Page/search";

@@ -21,21 +21,35 @@ public interface ArticleService {
 	Article getArticleByStatusAndId(Integer status,Integer id);
 
 	/**
+	 * 
+	 * @Description: get all article not split page
+	 * @param criteria
+	 * @return
+	 */
+    List<Article> listArticle(HashMap<String, Object> criteria);
+	/**
 	 * @Description: get categorylist from article <id>
 	 * @param articleId
 	 * @return  list  
 	 */
 	
-	List<Integer> listCategoryByArticleId(Integer articleId);
+	List<Integer> listCategoryIdByArticleId(Integer articleId);
 
+	/**
+	 * 
+	 * @Description: get article by category
+	 * @param cateId
+	 * @param limit
+	 * @return
+	 */
+    List<Article> listArticleByCategoryId(Integer cateId, Integer limit);
 	/**
 	 * @Description:  get anticle
 	 * @param categoryIds gather
 	 * @param limit 
 	 * @return   list 
 	 */
-	
-	List<Article> listArticleByCategoryIds(List<Integer> categoryIds, int limit);
+    List<Article> listArticleByCategoryIds(List<Integer> cateIds, Integer limit);
 
 	/**
 	 * @Description: get max req article 
@@ -90,7 +104,7 @@ public interface ArticleService {
 	 * @return   list
 	 */
 	
-	List<Article> listRencentArticle(int limit);
+	List<Article> listRecentArticle(int limit);
 
 	/**
 	 * @Description:  paging
@@ -122,7 +136,7 @@ public interface ArticleService {
 	 * @return    
 	 */
 	
-	Integer countArticleByCategoryId(Integer id);
+	Integer countArticleByCategoryId(Integer categoryId);
 
 	/**
 	 * @Description: update article comment
@@ -137,7 +151,7 @@ public interface ArticleService {
 	 * @return    
 	 */
 	
-	Integer countArticleByTagId(Integer id);
+	Integer countArticleByTagId(Integer tagId);
 
 	/**
 	 * @Description: get article by more comment
@@ -153,5 +167,50 @@ public interface ArticleService {
 	 */
 	
 	List<Article> listAllNotWithContent();
+
+	/**
+	 * @Description: get article 
+	 * @param status
+	 * @return    
+	 */
+	
+	Integer countArticle(Integer status);
+
+	/**
+	 * @Description: get comment count
+	 * @return    
+	 */
+	
+	Integer countArticleComment();
+
+	/**
+	 * @Description: get read count
+	 * @return    
+	 */
+	
+	 Integer countArticleView();
+
+	/**
+	 * @Description: get last update artile 
+	 * @return    
+	 */
+	
+	Article getLastUpdateArticle();
+
+	/**
+	 * @Description: update article
+	 * @param article    
+	 */
+	
+	void updateArticleDetail(Article article);
+	
+    /**
+     * delete more article
+     *
+     * @param ids article id
+     */
+    void deleteArticleBatch(List<Integer> ids);
+
+
 
 }

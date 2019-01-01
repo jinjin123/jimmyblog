@@ -9,19 +9,12 @@ import com.jimmyblog.entity.Options;
 public interface OptionsService {
 
 	/**
-	 * @Description: system settings
+	 * @Description: get basic info
 	 * @return    
 	 */
 	
 	Options getOptions();
 
-	/**
-	 * @Description: get settings
-	 * @param option
-	 * @return    
-	 */
-	
-	Options getOptions(Options option);
 
 	/**
 	 * @Description: add settings
