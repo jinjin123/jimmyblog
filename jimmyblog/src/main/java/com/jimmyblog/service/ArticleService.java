@@ -49,7 +49,7 @@ public interface ArticleService {
 	 * @param limit 
 	 * @return   list 
 	 */
-    List<Article> listArticleByCategoryIds(List<Integer> cateIds, Integer limit);
+    List<Article> listArticleByCategoryIds(List<Integer> categoryIds, Integer limit);
 
 	/**
 	 * @Description: get max req article 
@@ -110,7 +110,7 @@ public interface ArticleService {
 	 * @Description:  paging
 	 * @param pageIndex
 	 * @param pageSize
-	 * @param crieria <query condition>
+	 * @param criteria <query condition>
 	 * @return    
 	 */
 	
@@ -132,7 +132,7 @@ public interface ArticleService {
 
 	/**
 	 * @Description: accounting article on this category
-	 * @param   id
+	 * @param   categoryId
 	 * @return    
 	 */
 	
@@ -147,7 +147,7 @@ public interface ArticleService {
 
 	/**
 	 * @Description: get article tag from id 
-	 * @param id
+	 * @param tagId
 	 * @return    
 	 */
 	

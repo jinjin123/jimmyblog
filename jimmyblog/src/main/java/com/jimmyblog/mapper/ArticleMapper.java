@@ -83,14 +83,14 @@ public interface ArticleMapper {
 	 * @return    
 	 */
 	
-	List<Article> listArticleByViewCount(int limit);
+	List<Article> listArticleByViewCount(@Param(value = "limit") int limit);
 	/**
 	 * @Description: get last article
 	 * @param articleId
 	 * @return    
 	 */
 	
-	Article getAfterArtcile(Integer articleId);
+	Article getAfterArticle(@Param(value = "id") Integer articleId);
 	/**
 	 * @Description: get next article
 	 * @param articleId
@@ -126,7 +126,7 @@ public interface ArticleMapper {
 	Article getLastUpdateArticle();
 	/**
 	 * @Description: 
-	 * @param cateId
+	 * @param categoryId
 	 * @param limit
 	 * @return    
 	 */
@@ -135,12 +135,12 @@ public interface ArticleMapper {
             @Param("limit") Integer limit);
 	/**
 	 * @Description: get article by more category id
-	 * @param cateIds
+	 * @param categoryIds
 	 * @param limit
 	 * @return    
 	 */
 	
-	List<Article> findArticleByCategoryIds(List<Integer> cateIds, Integer limit);
+	List<Article> findArticleByCategoryIds(@Param("categoryIds")List<Integer> categoryIds,@Param("limit") Integer limit);
 	
 	/**
 	 * 

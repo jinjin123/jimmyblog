@@ -61,11 +61,11 @@ public class ArticleServiceImpl implements ArticleService {
     }
     
     @Override
-    public List<Article> listArticleByCategoryIds(List<Integer> cateIds, Integer limit) {
-        if (cateIds == null || cateIds.size() == 0) {
+    public List<Article> listArticleByCategoryIds(List<Integer> categoryIds, Integer limit) {
+        if (categoryIds == null || categoryIds.size() == 0) {
             return null;
         }
-        return articleMapper.findArticleByCategoryIds(cateIds, limit);
+        return articleMapper.findArticleByCategoryIds(categoryIds, limit);
     }
 
 	@Override
@@ -75,7 +75,7 @@ public class ArticleServiceImpl implements ArticleService {
 
 	@Override
 	public Article getAfterArticle(Integer articleId) {
-		return articleMapper.getAfterArtcile(articleId);
+		return articleMapper.getAfterArticle(articleId);
 	}
 
 	@Override

@@ -3,6 +3,7 @@ package com.jimmyblog.controller.admin;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -17,6 +18,8 @@ import com.jimmyblog.service.MenuService;
  * Created  by  Jimmy  on 2018/12/30
  *
  */
+@Controller
+@RequestMapping("/admin/menu")
 public class BackMenuController {
 	@Autowired
 	private MenuService menuService;

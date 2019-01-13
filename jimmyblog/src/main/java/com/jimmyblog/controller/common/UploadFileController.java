@@ -22,7 +22,7 @@ import lombok.extern.slf4j.Slf4j;
 public class UploadFileController {
 	public String uploadFile(@Param("file")MultipartFile file) {
 		//upload path
-		String rootPath = "/Users/wupeijin/Documents/uploads/";
+		String rootPath = "/Users/wupeijin/Documents/workspace/jimmyblog/uploads/";
 		//file full name ->spring.jpeg
 		String filename  = file.getOriginalFilename();
 		//file name

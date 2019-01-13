@@ -23,6 +23,7 @@ public class BackOptionsController {
 	 * @Description: base page
 	 * @return
 	 */
+	@RequestMapping(value = "")
 	public ModelAndView index() {
 		ModelAndView modelAndView = new ModelAndView();
 		Options option = optionService.getOptions();

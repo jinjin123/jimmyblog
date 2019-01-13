@@ -17,6 +17,8 @@ public class Notice implements Serializable {
 
 	private String noticeTitle;
 
+	private String noticeContent;
+
 	private Date noticeCreateTime;
 	
 	private Date noticeUpdateTime;

@@ -88,8 +88,8 @@ public class ArticleController {
 		//get hot article
 		List<Article> mostCommentArticle = articleService.listArticleByCommentCount(8);
 		model.addAttribute("mostCommentArticle", mostCommentArticle);
-		
-		return "HOME/Page/articleDetail";
+
+		return "Home/Page/articleDetail";
 	}
 	/**
 	 * 

@@ -39,8 +39,8 @@
                                  alt="${a.articleTitle}">
                         </a>
                         <span class="cat">
-                                <a href="/category/${a.categoryList[fn:length(a.categoryList)-1].categoryId}">
-                                        ${a.categoryList[fn:length(a.categoryList)-1].categoryName}
+                                <a href="/category/${a.categoryList[a.categoryList.size()-1].categoryId}">
+                                        ${a.categoryList[a.categoryList.size()-1].categoryName}
                                 </a>
                             </span>
                     </figure>

@@ -49,7 +49,7 @@ public class BackLinkController {
 		List<Link> linkList = linkService.listLink(null);
 		modelAndView.addObject("linkList",linkList);
 		
-		modelAndView.setViewName("Admin/link/insert");
+		modelAndView.setViewName("Admin/Link/insert");
 		return modelAndView;
 	}
 	/**

@@ -73,7 +73,7 @@ public class BackArticleController {
 		List<Tag> tagList = tagService.listTag();
 		model.addAttribute("categoryList", categoryList);
 		model.addAttribute("tagList", tagList);
-		return "Admin/Article/insert/";
+		return "Admin/Article/insert";
 	}
 	
 	/**

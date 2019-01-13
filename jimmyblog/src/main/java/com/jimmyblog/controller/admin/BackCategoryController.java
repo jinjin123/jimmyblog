@@ -3,6 +3,7 @@ package com.jimmyblog.controller.admin;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -16,6 +17,8 @@ import com.jimmyblog.entity.Category;
  * Created  by  Jimmy  on 2018/12/28
  *
  */
+@Controller
+@RequestMapping("/admin/category")
 public class BackCategoryController {
 	@Autowired
 	private ArticleService articleService;
@@ -36,6 +39,7 @@ public class BackCategoryController {
 		modelAndView.setViewName("Admin/Category/index");
 		return modelAndView;
 	}
+
 	/**
 	 * 
 	 * @Description: add category
